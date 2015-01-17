@@ -1,6 +1,7 @@
 var React = require('react');
+var InputBox = require('./InputBox.js');
 
-APP = React.createClass({
+var APP = React.createClass({
   render: function(){
     return (
     <div>
@@ -9,6 +10,7 @@ APP = React.createClass({
         <h3>React Firebase example</h3>
       </header>
         <p>Hello React and react</p>
+        <InputBox />
     </div>
     );
   }
