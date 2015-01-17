@@ -13,8 +13,13 @@
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
-    "testFileExtensions": [ "js" ],
-    "moduleFileExtensions": [ "js", "json" ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
     "globals": {
       "SCRIPTS": "<rootDir>/src/scripts"
     },
@@ -34,11 +39,12 @@
   "homepage": "https://github.com/waynelkh/react-firebase-example",
   "dependencies": {
     "file-loader": "*",
+    "firebase": "^2.1.1",
     "flux": "^2.0.1",
+    "jest-cli": "*",
     "object-assign": "^2.0.0",
     "react": "^0.12.2",
-    "react-router-component": "^0.23.2",
-    "jest-cli": "*"
+    "react-router": "^0.11.6"
   },
   "devDependencies": {
     "react-addons": "^0.9.0",
