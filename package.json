@@ -1,0 +1,54 @@
+{
+  "name": "react-firebase-example",
+  "version": "0.0.1",
+  "description": "react with firebase example",
+  "main": "build/bundle.js",
+  "scripts": {
+    "dev": "webpack --color && webpack-dev-server --inline --hot --content-base ./build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waynelkh/react-firebase-example.git"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testFileExtensions": [ "js" ],
+    "moduleFileExtensions": [ "js", "json" ],
+    "globals": {
+      "SCRIPTS": "<rootDir>/src/scripts"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/node_modules/"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "author": "waynelkh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waynelkh/react-firebase-example/issues"
+  },
+  "homepage": "https://github.com/waynelkh/react-firebase-example",
+  "dependencies": {
+    "file-loader": "*",
+    "flux": "^2.0.1",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2",
+    "react-router-component": "^0.23.2",
+    "jest-cli": "*"
+  },
+  "devDependencies": {
+    "react-addons": "^0.9.0",
+    "react-tools": "^0.12.2",
+    "react-hot-loader": "^1.0.4",
+    "css-loader": "*",
+    "style-loader": "*",
+    "webpack-dev-server": "^1.7.0",
+    "webpack": "^1.4.14",
+    "jsx-loader": "*",
+    "sass-loader": "*"
+  }
+}
