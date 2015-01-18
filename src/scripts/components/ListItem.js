@@ -17,14 +17,14 @@ var ListItem = React.createClass({
   handleRemove: function(evt){
     evt.stopPropagation();
     if(this.props.onRemove){
-      this.props.onRemove();
+      this.props.onRemove(evt.target);
     }
   },
   render: function(){
     return (
     <p>
       Event: {this.props.text}
-      <span className="glyphicon glyphicon-remove" onClick={this.handleRemove}></span>
+      <span className="glyphicon glyphicon-remove" onClick={this.handleRemove} />
     </p>
     );
   }

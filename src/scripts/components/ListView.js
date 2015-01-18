@@ -7,7 +7,7 @@ var ListView = React.createClass({
     todoList: React.PropTypes.array.isRequired
   },
 
-  RemoveItem: function(){
+  RemoveItem: function(evt){
     console.log("Click Delete");
   },
 
