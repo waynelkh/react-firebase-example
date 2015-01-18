@@ -1,7 +1,7 @@
 # Created by https://www.gitignore.io
 
 build
-
+*.orig
 ### SublimeText ###
 # cache files for sublime text
 *.tmlanguage.cache
